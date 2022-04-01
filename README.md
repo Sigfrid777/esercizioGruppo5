@@ -3,11 +3,10 @@
 # Restyling Generation.it
 
 ## Group GiaSai:
--Walter
--Matteo M.
--Oana
--Mattia G.
-...
+- Walter
+- Matteo M.
+- Oana
+- Mattia G.
 
 ## Tecnologie utilizzate:
 
