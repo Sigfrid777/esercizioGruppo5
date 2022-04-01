@@ -7,6 +7,7 @@
 -Matteo M.
 -Oana
 -Mattia G.
+...
 
 ## Tecnologie utilizzate:
 
