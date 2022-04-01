@@ -2,7 +2,7 @@
 
 #Restyling Generation.it
 
-##Gruppo GiaSai:
+##Group GiaSai:
 -Walter
 -Matteo M.
 -Oana
