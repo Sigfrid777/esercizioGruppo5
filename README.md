@@ -1,13 +1,13 @@
 # esercizioGruppo5
 
-#Restyling Generation.it
+# Restyling Generation.it
 
-##Group GiaSai:
+## Group GiaSai:
 -Walter
 -Matteo M.
 -Oana
 -Mattia G.
 
-##Tecnologie utilizzate:
+## Tecnologie utilizzate:
 
 ## Ringraziamo:
