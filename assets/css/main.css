@@ -56,6 +56,7 @@ body {
 	-webkit-text-size-adjust: none;
 }
 
+
 mark {
 	background-color: transparent;
 	color: inherit;
@@ -181,6 +182,8 @@ input, select, textarea {
 		border-top: solid 1px #c2c7cc;
 	}
 
+
+	
 	blockquote {
 		border-left: solid 0.5em #c2c7cc;
 		padding: 1em 0 1em 2em;
