@@ -19,6 +19,10 @@
 			.tag-interno{
 				margin-left: 50px;
 			}
+			.codice {
+				background-color: black; 
+				color: white;
+			}
 		</style>
 	</head>
 	<body class="right-sidebar is-preload">
@@ -59,10 +63,9 @@
 
 								<!-- Content -->
 									<article id="content">
-										<header>
+										<header style="text-align: center;">
 											
-                                             <strong><h1 style="font-size: 70px;"> Wiki</h1></strong>
-											<p>Struttura HTML5</p>
+                                             <strong><h2 style="font-size: 70px;"> Wiki - HTML5</h2></strong>											
 										</header>
 										<nav>
 											<ul>
@@ -77,7 +80,7 @@
 											della nostra pagina web. Ogni elemento della pagina è racchiuso all'interno di &lttag&gt. 
 											La struttura è racchiusa nel tag html che contiene &lthead&gt e dal &ltbody&gt. 
 										</p>
-										<div>
+										<div class="codice">
 											<span>&lthtml&gt </span> <br>
 											<span class="tag">&lt head &gt</span> <br>
 											<span class="tag-interno">informazini utili e risorse utilizzate</span> <br>
@@ -90,7 +93,7 @@
 										<p style="margin-top: 3%;" id="head">Nel tag &lthead&gt troviamo informazioni utili quali il titolo della pagina, la descrizione e l'autore,
 											i collegamenti al file css ed i meta tag.
 										</p>
-										<div>
+										<div class="codice">
 											<span>&lthead&gt</span> <br>
 											<span class="tag">&lttitle&gtTitolo&lt/title&gt</span> <br>
 											<span class="tag">&ltlink rel="stylesheet" href="assets/css/main.css"&gt</span> <br>
@@ -100,7 +103,7 @@
 										</div>
 										<p style="margin-top: 3%;" id="corpo">Nel &ltbody&gt troviamo invece l'intero corpo della pagina, ovvero quello che poi l'utente
 										vedrà a schermo.</p>
-										<div>
+										<div class="codice">
 											<span>&ltbody&gt</span> <br>
 											<span class="tag">&lth1&gtTitolo pagina&lt/h1&gt</span> <br>
 											<span class="tag">&lth2&gtSottotitolo (può arrivare fino h6 in basi all'importanza) &ltstrong&gt<strong>pagina</strong>&lt/strong&gt&lt/h2&gt</span> <br>
@@ -113,7 +116,7 @@
 										</div>
 										<p style="margin-top: 3%;" id="tagUtili">All'interno del body è possibile inoltre inserire collegamente ad altri link, ad altre parti della pagina
 										ed inserire immagini (specificando oltre al percordo dell'img anche una descrizione)</p>
-											<div>
+											<div class="codice">
 											<span>&ltbody&gt</span> <br>
 											<span class="tag">&lta href="ChiSiamo.html"&gtLink chi siamo&lt/a&gt</span> <br>
 											<span class="tag">&ltimg src="image/Studenti-dip.jpg" alt="studenti diplomati"&gt</span> <br>
@@ -128,7 +131,7 @@
 											come i tag &ltheader&gt e &ltfooter&gt per la testa e i piedi della pagina, il &ltdiv&gt ovvero un contenitore
 											di tipo blocco (occupa l'intera linea della pagina) e lo &ltspan&gt, contenitore inline (occupa solo lo spazio necessario)
 										</p>
-										<div>
+										<div class="codice">
 											<span>&ltbody&gt</span> <br>
 											<span class="tag">&ltheader&gtHeader&lt/header&gt</span> <br>
 											<span class="tag">&ltdiv&gtcontenitore blocco&lt/div&gt</span> <br>
