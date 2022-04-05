@@ -66,83 +66,222 @@
 									<article id="content">
 										<header style="text-align: center;">
 											
-                                             <strong><h2 style="font-size: 70px;"> Wiki - HTML5</h2></strong>											
+                                             <strong><h2 style="font-size: 70px;"> Wiki - CSS</h2></strong>											
 										</header>
 										<nav>
 											<ul>
 												<li><a href="#struttura"></a>Struttura</li>
-												<li><a href="#head">Head</a></li>
-												<li><a href="#corpo">Body</a></li>
-												<li><a href="#tagUtili">Collegamenti</a></li>
-												<li><a href="#contenitori">Contenitori</a></li>
+												<li><a href="#selettori">Selettori</a></li>
+												<li><a href="#text-properties">Text-properties</a></li>
+												<li><a href="#FontProperties">Font-properties</a></li>
+												<li><a href="#images-properties">Images properties</a></li>
 											</ul>
 										</nav>
-										<p id="struttura">HTML (HyperText Markup Language) è un linguaggio di markup che permette di definire la struttura
-											della nostra pagina web. Ogni elemento della pagina è racchiuso all'interno di &lttag&gt. 
-											La struttura è racchiusa nel tag html che contiene &lthead&gt e dal &ltbody&gt. 
+										<p id="struttura">
+											<b> Definisce gli aspetti grafici degli elementi racchiusi nei tag.</b>
+                                            Gli Attributi vengono inseriti all' interno di <b>{}</b> e seguiti da <b>:</b> 
+											che illustrano il <b>valore</b> della modifica.
+                                            <b>Argomenti consecutivi sono separati da un ";"</b> (punto e virgola) invece che dalla 
+											"," (virgola).
+                                            <b>Inoltre molti argomenti sono divisi da "-"</b> (trattino centrale) che fa parte 
+											integrante del nome stesso.
+                                            Gli spazi vuoti ed i ritorno a capo non hanno alcuna influenza.
+                                            <b> Ci si riferisce all' elemento che si vuole modificare attraverso i selettori.</b> Che possono essere .class, #id, tags e pseudoSelettori.
+                                        </p>
+																		   
+										<article>
+											<h3 id="selettori">Selettore</h3>
+											<p>Questo metodo può essere utilizzato solamente per i tag di html, per customizzare tutti i tag di un certo tipo allo stesso modo</p>
+											<p class="codice">
+											 p{ <br>
+												font-size: 10px;
+												 <br>}
+											</p>
+								   </article>
+									
+								   <article>
+										   <h3>Classe</h3>
+										   <p>Identifica una categoria di elementi con proprietà uguali, come ad esempio tutti i div di uno specifico container</p>
+										   <p class="codice">
+											   .titolo{  <br>
+											   border-style:dotted; <br>
+												.... <br>
+												 }
+										   </p>
+										   <p class="codice">
+										   &lth1 class="titolo"&gt Titolo &lt/h1&gt
+										   </p>
+								   </article>
+									
+								   <article>
+											<h3>Id</h3>
+											<p>Identifica un solo elemento nella pagina</p>
+											<p class="codice">
+											 #sottotitolo{  <br>
+											 border-style:dotted; <br>
+											 .... <br>
+											  }
+											 </p>
+											 <p class="codice">
+												  &lth2 id="titolo"&gt Sottotitolo &lt/h2&gt
+											 </p>
+								   </article>
+									
+								   <article>
+											   <h3>Box-model</h3>
+											 <p>Padding, border e margin modificano lo spazio tra il testo e la struttura che lo racchiude</p>
+											 <img src="image/box-model.png" width="20%">
+								   </article>
+
+
 										</p>
 										<div class="codice">
-											<span>&lt!DOCTYPE HTML&gt</span> &lt!--Commento--&gt<br>
-											<span>&lthtml&gt </span> <br>
-											<span class="tag">&lthead&gt</span> <br>
-											<span class="tag-interno">informazini utili e risorse utilizzate</span> <br>
-											<span class="tag">&lt/head&gt </span> <br>	 
-											<span class="tag">&ltbody&gt</span> <br>
-											<span class="tag-interno">corpo pagina </span> <br>
-											<span class="tag">&lt/body&gt </span> <br>	
-											<span>&lt/html&gt</span>										
+
+											<p>
+												selettore {
+													proprietà : valore;
+													proprietà : valore;
+													ecc.
+												}
+											</p>									
 										</div>
-										<p style="margin-top: 3%;" id="head">Nel tag &lthead&gt troviamo informazioni utili quali il titolo della pagina, la descrizione e l'autore,
-											i collegamenti al file css ed i meta tag.
+										<p style="margin-top: 3%;"><h2 id="text-properties">CSS Text Properties</h2>
+											<article id="content">
+												<h3>Text-Align</h3>
+												<p>
+													<b>left/right/center</b>
+													Il testo all' interno del selettore selezionato subira la modifica da CSS e il suo testo sarà posizionato,
+													 sempre all' interno del suo contenitore, rispettivamente a sinistra/destra/in mezzo. <br>
+													 <b>justify</b>
+													 paragrafo allineato al centro con giustificazione, che cosa è la giustificazione? Guardate attentamente i due margini: destro e sinistro,
+													  potrete notare che il testo è allineato sia a destra che a sinistra;
+													  per fare questo il comando aggiunge automaticamente degli spazi vuoti fra le parole.
+												</p>
+											</article>
 										</p>
 										<div class="codice">
-											<span>&lthead&gt</span> <br>
-											<span class="tag">&lttitle&gtTitolo&lt/title&gt</span> <br>
-											<span class="tag">&ltlink rel="stylesheet" href="assets/css/main.css"&gt</span> <br>
-											<span class="tag">&ltmeta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"&gt</span> <br>
-											<span class="tag">&ltscript src="https://kit.fontawesome.com/1257a36699.js" crossorigin="anonymous"&gt</span> <br>
-											<span>&lt/head&gt </span>
+											<p>
+												selettore {
+													text-align : left;
+													text-align : right;
+													text-align : center;
+													text-align : justify;
+												}
+											</p>
 										</div>
-										<p style="margin-top: 3%;" id="corpo">Nel &ltbody&gt troviamo invece l'intero corpo della pagina, ovvero quello che poi l'utente
-										vedrà a schermo.</p>
-										<div class="codice">
-											<span>&ltbody&gt</span> <br>
-											<span class="tag">&lth1&gtTitolo pagina&lt/h1&gt</span> <br>
-											<span class="tag">&lth2&gtSottotitolo (può arrivare fino h6 in basi all'importanza)&ltstrong&gt<strong style="color: yellow;">Grassetto</strong>&lt/strong&gt&lt/h2&gt</span> <br>
-											<span class="tag">&ltp&gtparagrago &lti&gt<i>corsivo</i>&lt/i&gt&lt/p&gt</span> <br>
-											<span class="tag">&ltol&gtlista ordinata 
-												<br> <span class="tag-interno">&ltli&gt1-list item&lt/li&gt</span>
-												<br> <span class="tag-interno">&ltli&gt2-list item&lt/li&gt</span> <br>
-												<span class="tag">&ltol&gt <br>
-											<span>&lt/body&gt </span>
-										</div>
-										<p style="margin-top: 3%;" id="tagUtili">All'interno del body è possibile inoltre inserire collegamente ad altri link, ad altre parti della pagina
-										ed inserire immagini (specificando oltre al percordo dell'img anche una descrizione)</p>
-											<div class="codice">
-											<span>&ltbody&gt</span> <br>
-											<span class="tag">&lta href="ChiSiamo.html" target="_blank"&gtLink chi siamo&lt/a&gt</span> <br>
-											<span class="tag">&ltimg src="image/Studenti-dip.jpg" alt="studenti diplomati"&gt</span> <br>
-											<span class="tag">&ltnav&gt <br>
-												<span class="tag-interno">&ltul&gt lista non ordinata</span> <br>
-												<span class="tag-interno">&ltli&gt&lta href="#"&gtpunto della pagina&lt/a&gt&lt/i&gt</span> <br>
-												<span class="tag">&lt/ul&gt</span> <br>
-												<span class="tag">&lt/nav&gt <br>
-												<span>&lt/body&gt </span>
-											</div>
-										<p style="margin-top: 3%;" id="contenitori">Esistono inoltre alcuni tipi di tag che non hanno un significato semantico ma un ruolo di contenitore,
-											come i tag &ltheader&gt e &ltfooter&gt per la testa e i piedi della pagina, il &ltdiv&gt ovvero un contenitore
-											di tipo blocco (occupa l'intera linea della pagina) e lo &ltspan&gt, contenitore inline (occupa solo lo spazio necessario)
-										</p>
-										<div class="codice">
-											<span>&ltbody&gt</span> <br>
-											<span class="tag">&ltheader&gtHeader&lt/header&gt</span> <br>
-											<span class="tag">&ltdiv&gtcontenitore blocco&lt/div&gt</span> <br>
-											<span class="tag">&ltdiv&gtcontenitore blocco&lt/div&gt</span> <br>
-											<span class="tag">&ltspan&gtcontenitore inline&lt/span&gt</span> <span>&ltspan&gtcontenitore inline&lt/span&gt</span> <br>												
-												<span class="tag">&ltfooter&gtfooter&lt/footer&gt</span> <br>
-												<span>&lt/body&gt </span>
-											</div>
-										</div>
+										<article id="content">
+												<span><h3>Text-decoration</h3>
+													<ul><p>Decorazione del testo</p>
+														<li><b>overline= sopralineato</b></li>
+														<li><b>underline= sottolineato</b></li>
+														<li><b>line-through= sbarrato</b></li>
+														<li><b>none= nessuno</b></li>
+														<li><b>blink= lampeggiante (non supportato da IE)</b></li>
+													</ul></span>
+													<div class="codice"><p>sel {text-decoration: overline;} <br>
+														sel {text-decoration: underline;} <br>
+														sel {text-decoration: overline underline;} <br>
+														sel {text-decoration: line-through;} <br>
+														sel {text-decoration: blink;} <br>
+														sel {text-decoration: none;}</p>
+													</div>
+											   
+										</article>
+										<article>
+											<h3>Text-indent</h3>
+											<p>Lunghezza del testo</p>
+											<p class="codice">sel {text-indent: 12px;} <br>
+												sel {text-indent: 20%;}</p>
+										</article>
+										<article>
+											<h3>Text-transform</h3>
+											<ul><p>Trasforma il testo</p>
+											<li><b>Text-Transform: Capitalize; Testo Di Prova</b></li>
+											<li><b>TEXT-TRANSFORM: UPPERCASE; TESTO DI PROVA</b></li>
+											<li><b>text-transform: lowercase; testo di prova</b></li>
+											</ul>
+											<p class="codice">
+												sel {text-transform: capitalize;}
+												sel {text-transform: uppercase;}
+												sel {text-transform: lowercase;}
+											</p>
+										</article>
+										<article>
+											<h3>Line-height</h3>
+											<ul>
+												<p>Interlinea, altezza della riga del testo, valori possibili: normal, numero, percentuale. Con il valore normal il testo non avrà alcuna variazione. Il numero può essere espresso in em o in percentuale.</p>
+												<li><b>normal</b></li>
+												<li><b>numero</b></li>
+												<li><b>percentuale</b></li>
+											</ul>
+										   
+										</article>
+										<article>
+											<h3>Letter-spacing</h3>
+											<ul>
+												<p>Spazio fra le lettere che compongono il testo. Il numero può essere espresso in tutti i modi possibili come riportato nella tabella parametri.
+												</p>
+												<li><b>letter-spacing: numero</b></li>
+												</ul>
+												<p class="codice">
+													sel {letter-spacing: 1em;} <br>
+													sel {letter-spacing: 2px;}
+												</p>
+										</article>
+										<article>
+											<h3 id="FontProperties">Font Proprieties</h3>
+											<ul>
+												<li><b>font-family</b><br><p>imposta una famiglia di font (come Arial, Times, Courier) o una famiglia generica (serif, sans-serif, cursive, fantasy, monospace); si può indicare una lista di famiglie da usare in alternativa (il font da usare deve essere disponibile sul computer dell’utente; se non è disponibile il primo della lista, viene usato il successivo; se nessuno dei font è presente, viene usato il font predefinito del browser); <br> font-familiy: Verdana, Arial, Helvetica, sans-serif;
+													usa il primo font disponibile o un generico sans-serif.</p></li>
+												<li><b>font-style</b><br><p>imposta lo stile normal o italic;</p></li>
+												<li><b>font-weight</b><br><p>imposta lo spessore o peso del testo; valori: normal, bold, bolder, lighter o 100, 200, 300, 400, 500, 600, 700, 800, 900 (normal equivale a 400, bold a 700).</p></li>
+												<li><b>font-size </b><br><p>imposta la dimensione del font (la misura si riferisce allo spazio verticale, la larghezza aumenta in proporzione); si può indicare una dimensione assoluta specificando l’unità di misura o un valore in percentuale rispetto alla dimensione predefinita; si possono anche usare le parole chiave: xx-small, x-small, small, medium, large, x-large, xx-large.</p></li>
+												<li><b>font</b><br><p> imposta in un’unica proprietà peso e stile, dimensione, interlinea e famiglie di caratteri (i valori non vanno separati da virgole, la virgola va usata solo tra più famiglie di caratteri).</p></li>
+											   
+											</ul>
+										</article>
+										<article>
+											<h2 id="images-properties">Images's Properties</h2>
+										   
+										</article>
+										<article>
+											<h3>Importo nel head del file css</h3>
+									   <p>Questo è il metodo migliore per collegare il file .css, il più ordinato ed utilizzato</p>
+											<p class="codice">&lt link rel="stylesheet" href="assets/css/main.css"/ &gt</p>
+								  </article>
+								   
+								  <article>
+											<h3>Aggiungo direttamente il codice nell'head</h3>
+											<p class="codice">&lthead&gt
+											   <br>&ltstyle&gt
+											   <br>
+													   body {
+														  background-color: linen;
+													   }
+											   <br>
+												&lt/style&gt
+											   <br>
+											   &lt/head&gt</p>
+								  </article>
+																	  
+								  <article>
+											 <h3>Inline</h3>
+											 <p class="codice">Può essere utilizzato per decorare un singolo elemento
+								   
+											 Per l'inline si aggiunge l'attributo style per ogni singolo elemento. Esso può contenere qualunque tipo di attributo.</p>
+											 <p class="codice">
+											  &ltp style="..."&gt
+											</p>
+								  </article>
+
+								  
+
+
+								</div>
+							</div>
+					   
+					</div>
+				</div>
 									</article>
 							
 						</div>
