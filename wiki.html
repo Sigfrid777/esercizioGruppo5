@@ -22,7 +22,9 @@
 			.codice {
 				background-color: black; 
 				color: white;
+				font-family: 'Courier New', Courier, monospace;
 			}
+			
 		</style>
 	</head>
 	<body class="right-sidebar is-preload">
@@ -81,13 +83,14 @@
 											La struttura è racchiusa nel tag html che contiene &lthead&gt e dal &ltbody&gt. 
 										</p>
 										<div class="codice">
+											<span>&lt!DOCTYPE HTML&gt</span> &lt!--Commento--&gt<br>
 											<span>&lthtml&gt </span> <br>
-											<span class="tag">&lt head &gt</span> <br>
+											<span class="tag">&lthead&gt</span> <br>
 											<span class="tag-interno">informazini utili e risorse utilizzate</span> <br>
-											<span class="tag">&lt /head &gt </span> <br>	 
-											<span class="tag">&lt body &gt</span> <br>
+											<span class="tag">&lt/head&gt </span> <br>	 
+											<span class="tag">&ltbody&gt</span> <br>
 											<span class="tag-interno">corpo pagina </span> <br>
-											<span class="tag">&lt /body &gt </span> <br>	
+											<span class="tag">&lt/body&gt </span> <br>	
 											<span>&lt/html&gt</span>										
 										</div>
 										<p style="margin-top: 3%;" id="head">Nel tag &lthead&gt troviamo informazioni utili quali il titolo della pagina, la descrizione e l'autore,
@@ -106,11 +109,11 @@
 										<div class="codice">
 											<span>&ltbody&gt</span> <br>
 											<span class="tag">&lth1&gtTitolo pagina&lt/h1&gt</span> <br>
-											<span class="tag">&lth2&gtSottotitolo (può arrivare fino h6 in basi all'importanza) &ltstrong&gt<strong>pagina</strong>&lt/strong&gt&lt/h2&gt</span> <br>
+											<span class="tag">&lth2&gtSottotitolo (può arrivare fino h6 in basi all'importanza)&ltstrong&gt<strong style="color: yellow;">Grassetto</strong>&lt/strong&gt&lt/h2&gt</span> <br>
 											<span class="tag">&ltp&gtparagrago &lti&gt<i>corsivo</i>&lt/i&gt&lt/p&gt</span> <br>
 											<span class="tag">&ltol&gtlista ordinata 
-												<br> <span class="tag-interno">&ltli&gt1-list item&ltli&gt</span>
-												<br> <span class="tag-interno">&ltli&gt2-list item&ltli&gt</span> <br>
+												<br> <span class="tag-interno">&ltli&gt1-list item&lt/li&gt</span>
+												<br> <span class="tag-interno">&ltli&gt2-list item&lt/li&gt</span> <br>
 												<span class="tag">&ltol&gt <br>
 											<span>&lt/body&gt </span>
 										</div>
@@ -118,11 +121,11 @@
 										ed inserire immagini (specificando oltre al percordo dell'img anche una descrizione)</p>
 											<div class="codice">
 											<span>&ltbody&gt</span> <br>
-											<span class="tag">&lta href="ChiSiamo.html"&gtLink chi siamo&lt/a&gt</span> <br>
+											<span class="tag">&lta href="ChiSiamo.html" target="_blank"&gtLink chi siamo&lt/a&gt</span> <br>
 											<span class="tag">&ltimg src="image/Studenti-dip.jpg" alt="studenti diplomati"&gt</span> <br>
 											<span class="tag">&ltnav&gt <br>
 												<span class="tag-interno">&ltul&gt lista non ordinata</span> <br>
-												<span class="tag-interno">&ltli&gt&lta href="#" target="_blank"&gtpunto della pagina&lt/a&gt</span> <br>
+												<span class="tag-interno">&ltli&gt&lta href="#"&gtpunto della pagina&lt/a&gt&lt/i&gt</span> <br>
 												<span class="tag">&lt/ul&gt</span> <br>
 												<span class="tag">&lt/nav&gt <br>
 												<span>&lt/body&gt </span>
@@ -181,13 +184,13 @@
 						<section class="col-6 col-12-narrower">
 							<div class="row gtr-0">
 								<ul class="divided icons col-6 col-12-mobile">
-									<li class="fa-brands fa-twitter"><a href="https://twitter.com/generationita"><span class="extra">twitter.com/</span>generationit</a></li>
-									<li class="fa-brands fa-facebook-f"><a href="https://www.facebook.com/GenerationITA/"><span class="extra">facebook.com/</span>generationit</a></li>
+									<li class="fa-brands fa-twitter"><a href="https://twitter.com/generationita" target="_blank"><span class="extra">twitter.com/</span>generationit</a></li>
+									<li class="fa-brands fa-facebook-f"><a href="https://www.facebook.com/GenerationITA/" target="_blank"><span class="extra">facebook.com/</span>generationit</a></li>
 									
 								</ul>
 								<ul class="divided icons col-6 col-12-mobile">
-									<li class="fa-brands fa-instagram"><a href="https://www.instagram.com/generationitaly_youemployed/?hl=it"><span class="extra">instagram.com/</span>generationit</a></li>
-									<li class="fa-brands fa-youtube"><a href="https://www.youtube.com/channel/UChMFVOPUhy6d-eXegFs7RDw"><span class="extra">youtube.com/</span>generationit</a></li>
+									<li class="fa-brands fa-instagram"><a href="https://www.instagram.com/generationitaly_youemployed/?hl=it" target="_blank"><span class="extra">instagram.com/</span>generationit</a></li>
+									<li class="fa-brands fa-youtube"><a href="https://www.youtube.com/channel/UChMFVOPUhy6d-eXegFs7RDw" target="_blank"><span class="extra">youtube.com/</span>generationit</a></li>
 									
 								</ul>
 							</div>
