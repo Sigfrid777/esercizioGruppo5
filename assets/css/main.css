@@ -2377,16 +2377,16 @@ input, select, textarea {
 		}
 
 		#promo .button {
-			background: #fff;
-			border-color: rgba(255, 255, 255, 0);
+			background: rgb(228, 212, 212);
+			border-color: rgba(211, 187, 187, 0);
 			color: #27636B;
 			font-size: 1.25em;
 		}
 
 			#promo .button:hover {
-				border-color: rgba(255, 255, 255, 0.75);
-				background-color: rgba(255, 255, 255, 0.15);
-				color: #fff;
+				border-color:#27636B ;
+				background-color: rgba(228, 201, 201, 0.15);
+				color: #27636B;
 			}
 
 /* Main */
